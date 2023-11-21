@@ -34,13 +34,13 @@ Vyberte z možností:
                 volba_menu = input("\nVyberte možnost: ")
 
                 if not volba_menu.isdigit():
-                    print("Zadejte prosím číslo (1-4) ")
+                    print("Zadejte číslo (1-4) ")
                     continue
 
                 volba_menu = int(volba_menu)
 
                 if volba_menu > 4 or volba_menu < 1:
-                    print("Zadejte prosím číslo (1-4) ")
+                    print("Zadejte číslo (1-4) ")
 
             #Podmínka pro spustění určité funkce na základě uživatelského vstupu
             if volba_menu == 1:
@@ -77,7 +77,7 @@ Q - ukončení
             jmeno = input("\nZadejte své křestní jméno: ")
 
             if not jmeno.isalpha():
-                print("Zadejte prosím jméno v textovém formátu")
+                print("Zadejte jméno v textovém formátu")
                 continue
             else:
                 jmeno = jmeno.capitalize()
@@ -87,7 +87,7 @@ Q - ukončení
                     prijmeni = input("\nZadejte své příjmení: ")
 
                     if not prijmeni.isalpha():
-                        print("Zadejte prosím příjmení v textovém formátu")
+                        print("Zadejte příjmení v textovém formátu")
                         continue
                     else:
                         prijmeni = prijmeni.capitalize()
@@ -97,7 +97,7 @@ Q - ukončení
                             vek = input("\nZadejte svůj věk: ")
                             
                             if not vek.isdigit():
-                                print("Zadejte prosím věk v číselném formátu")
+                                print("Zadejte věk v číselném formátu")
                                 continue
                             else:
 
@@ -111,7 +111,7 @@ Q - ukončení
                                     else:
 
                                         if len(telefon) != 9:
-                                            print("Zadejte prosím devítimístné telefonní číslo")
+                                            print("Zadejte devítimístné telefonní číslo")
                                             continue
                                         else:
                                             
@@ -142,7 +142,7 @@ Q - ukončení
             jmeno = input("\nZadejte křestní jméno uživatele: ")
 
             if not jmeno.isalpha():
-                print("Zadejte prosím křestní jméno v textovém formátu")
+                print("Zadejte křestní jméno v textovém formátu")
                 continue
             else:
                 #Cyklus s podmínkou, která kontroluje správný formát příjmení
@@ -150,7 +150,7 @@ Q - ukončení
                     prijmeni = input("\nZadejte příjmení uživatele: ")
                     
                     if not prijmeni.isalpha():
-                        print("Zadejte prosím příjmení v textovém formátu")
+                        print("Zadejte příjmení v textovém formátu")
                         continue
                     else:
 
