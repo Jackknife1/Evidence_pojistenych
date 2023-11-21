@@ -139,10 +139,10 @@ Q - ukončení
 
         #Cyklus s podmínkou, která kontroluje spávný formát křestního jména
         while True:
-            jmeno = input("\nZadejte jméno uživatele: ")
+            jmeno = input("\nZadejte křestní jméno uživatele: ")
 
             if not jmeno.isalpha():
-                print("Zadejte prosím jméno v textovém formátu")
+                print("Zadejte prosím křestní jméno v textovém formátu")
                 continue
             else:
                 #Cyklus s podmínkou, která kontroluje správný formát příjmení
