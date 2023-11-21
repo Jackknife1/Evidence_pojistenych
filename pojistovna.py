@@ -1,17 +1,17 @@
 from uzivatel import Uzivatel
 
 
-#Třída pojišťovna s funkcemi pro správu uživatelů v seznamu
+#Třída pojišťovna s funkcemi pro správu a vyhledávání uživatelů v seznamu pojisteni_uzivatele
 class Pojistovna:
 
     #Konstruktor se seznamem
     def __init__(self):
         self.pojisteni_uzivatele = []
 
-    #Funkce menu spustí hlavní nabídku pro navigaci uživatele v aplikaci
+    #Funkce vypis_menu spustí hlavní nabídku pro navigaci uživatele v aplikaci
     def vypis_menu(self):
 
-    #While cyklus pro neustálý běh programu s hlavním menu
+    #While cyklus pro neustálý běh programu 
         while True:
             print(
 """
@@ -42,7 +42,7 @@ Vyberte z možností:
                 if volba_menu > 4 or volba_menu < 1:
                     print("Zadejte prosím číslo (1-4) ")
 
-            #Podmínka pro spustění funkce na základě uživatelského vstupu
+            #Podmínka pro spustění určité funkce na základě uživatelského vstupu
             if volba_menu == 1:
                     self.vytvor_uzivatele()
             elif volba_menu == 2:
@@ -53,11 +53,11 @@ Vyberte z možností:
                     print("\nUkončení aplikace\n")
                     break
             
-            #Podminky pro kontrolu uživatelského vstupu pro návrat do hlavního menu nebo ukončení aplikace
+            #Podmínky pro kontrolu uživatelského vstupu pro návrat do hlavního menu nebo ukončení aplikace
             if True:
                 konec_volba = input(
 
-            #Menu s možnostsmi ukončení programu nebo návratem do hlavního menu
+            #Menu s možnostmi ukončení programu nebo návratem do hlavního menu
 """
 Libovolná klávesa - návrat do hlavního menu
 Q - ukončení
@@ -69,7 +69,7 @@ Q - ukončení
                 break
 
 
-    #Tato funkce vytvoří nového uživatele a uloží ho do proměnné 
+    #Tato funkce vytvoří nového uživatele a uloží ho do seznamu pojisteni_uzivatele
     def vytvor_uzivatele(self):
 
         #Cyklus s podmínkou kontrolující, jestli je jméno textový řetězec
@@ -101,7 +101,7 @@ Q - ukončení
                                 continue
                             else:
 
-                                #Cyklus s podmínkami pro kontrolu formátu telefonního čísla a formátoování řetězce
+                                #Cyklus s podmínkami pro kontrolu formátu telefonního čísla a formátování řetězce
                                 while True:
                                     telefon = input("\nZadejte vaše telefonní číslo: ")
                                     telefon = "".join(telefon.split())
@@ -134,7 +134,7 @@ Q - ukončení
             print("\nSeznam pojištěných uživatelů je prázdný")
 
 
-    #Tato funkce vyhledá v seznamu pojisteni_uzivatele určitého uživatele podle jména a příjmení
+    #Tato funkce vyhledá v seznamu pojisteni_uzivatele určitého uživatele podle křestního jména a příjmení
     def vyhledej_uzivatele(self):
 
         #Cyklus s podmínkou, která kontroluje spávný formát křestního jména

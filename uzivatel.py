@@ -1,8 +1,7 @@
 
-#Třída uživatele s konstruktorem
+#Třída uživatele s konstruktorem a str metodou
 class Uzivatel:
 
-    #Konstruktor s údaji uživatele údajů uživatele
     def __init__(self, jmeno, prijmeni, vek, telefon):
         self.jmeno = jmeno
         self.prijmeni = prijmeni

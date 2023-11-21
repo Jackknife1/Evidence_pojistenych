@@ -2,7 +2,7 @@
 
 #Verze 2.0 - 18.11.2023
 
-#Verze 3.0 - Finální verze
+#Verze 3.0 - Finální verze - 20.11.2023
 
 from pojistovna import Pojistovna
 
