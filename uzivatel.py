@@ -9,5 +9,5 @@ class Uzivatel:
         self.telefon = telefon
 
     def __str__(self):
-        return (f"\nUživatel {self.jmeno} {self.prijmeni}")
+        return (f"Uživatel: {self.jmeno} {self.prijmeni}, Věk: {self.vek}, Telefon: {self.telefon}")
 
